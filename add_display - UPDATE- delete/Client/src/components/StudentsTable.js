@@ -59,7 +59,7 @@ const StudentsTable = () => {
   const handleDelete = async (rollNo) => {
     try {
       const response = await axios.delete(
-        `https://localhost:4000/student/${rollNo}`
+        `http://localhost:4000/student/${rollNo}`
       );
       alert("Student deleted successfully");
       fetchStudents();
